@@ -1,6 +1,5 @@
 FROM debian:buster-slim
-#FROM debian:jessie
-MAINTAINER dsheyp
+MAINTAINER Zerginator
 
 ENV DAR_PREFIX /usr/local/dar
 ENV PATH $PATH:$DAR_PREFIX/bin
