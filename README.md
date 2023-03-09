@@ -14,3 +14,7 @@ without the need to have the files still in place on your machine.
 
 There is also a dockerfile for dargui (https://dargui.sourceforge.io/) available.
 dargui is an userinterface for UI for dar that allows easy usage.
+
+The docker container is available from docker hub at: zerginator/docker-dar
+
+As the docker is terminal only I currently cannot install it directly from UnRaid Webinterface, as it immidately closes, so run it from the unraid console with an added execution of /bin/bash
