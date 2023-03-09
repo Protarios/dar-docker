@@ -1,0 +1,11 @@
+version: "1.0"
+
+services:
+    docker-dar:
+        build: .
+        restart: always
+        tty: true
+        stdin_open: true
+        command: bash
+        ports:
+            - 5543:5543
