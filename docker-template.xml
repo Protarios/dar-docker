@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DAR</Name>
+  <Repository>zerginator/dar</Repository>
+  <Registry>https://hub.docker.com/r/zerginator/dar</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>http://forums.unraid.net</Support>
+  <Project/>
+  <Overview>&#xD;
+Dockerfile for dar command&#xD;
+&#xD;
+&#xD;
+DAR will run on port 5543.&#xD;
+&#xD;
+&#xD;
+</Overview>
+  <Category>Backup:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://dargui.sourceforge.io/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1678364964</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="5543" Default="5543" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5543</Config>
+  <Config Name="Backup" Target="/backupsource" Default="/mnt/user/" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+  <Config Name="DAR Library" Target="/DAR" Default="/mnt/user/Backup/.DAR/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/LTO/Library/</Config>
+  <Config Name="Backup Server" Target="/backupsink" Default="/mnt/user/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/LTO/ToLTO/</Config>
+  <Config Name="Recovery" Target="/recoversource" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/LTO/FromLTO/</Config>
+</Container>
